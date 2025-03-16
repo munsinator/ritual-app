@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(10px, -15px);
+    }
+    50% {
+      transform: translate(-10px, 10px);
+    }
+    75% {
+      transform: translate(15px, -10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .relative div {
+    animation: float 6s infinite ease-in-out alternate;
+  }
+  
+  .relative div:nth-child(1) {
+    animation-duration: 7s;
+  }
+  
+  .relative div:nth-child(2) {
+    animation-duration: 5s;
+  }
+  
+  .relative div:nth-child(3) {
+    animation-duration: 6.5s;
+  }
