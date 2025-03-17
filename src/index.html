@@ -24,13 +24,17 @@
     </section>
 
     <!-- Meditation screen WIP -->
-    <section id="meditation-screen">
-      <div id="circles" class="relative h-48 w-48">
+    <section id="meditation-screen" class="flex flex-col items-center">
+      <p class="text-l text-stone-600 font-semibold">Click on me to pause</p>
+      <div id="circles" class="relative h-48 w-48 mt-4">
         <div class="absolute h-48 w-48 rounded-full bg-rose-300"></div>
         <div class="absolute inset-6 h-36 w-36 rounded-full bg-rose-200"></div>
         <div class="absolute inset-12 h-24 w-24 rounded-full bg-rose-100"></div>
       </div>
-      <audio src="./assets/audio.mp3"></audio>
+      <!-- working on custom play, pause button -->
+      <audio id="audio" autoplay>
+        <source src="./assets/audio.mp3">
+      </audio>
     </section>
 
     <!-- Prepare screen WIP -->
@@ -45,6 +49,6 @@
     <section id="end-screen">
     </section>
 
-    <script src="./js/render.js"></script>   
+    <script src="./js/render.js"></script>
   </body>
 </html>
